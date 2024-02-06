@@ -52,8 +52,8 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function carpma(sayi1, sayi2) {
+  return sayi1 * sayi2;
 }
 
 /* Görev 2 : Köpeğin Yaşı */
@@ -65,10 +65,9 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(yas) {
+  return yas*7;
 }
-
 /* Görev 3 */
 /*
 Aşağıdakileri oyun isimli fonksiyonu kullanarak yap.
@@ -84,7 +83,17 @@ OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı ye
 */
 
 function oyun(oyuncu, bilgisayar) {
-  /*buraya kodunu yazabilirsin*/
+  if (oyuncu == "Makas" && bilgisayar == "Kağıt"){
+    console.log("Kazandın!")
+  }else if (oyuncu == "Kağıt" && bilgisayar == "Taş"){
+    console.log("Kazandın!")
+  }else if (oyuncu == "Taş" && bilgisayar == "Makas"){
+    console.log("Kazandın!")
+  }else if (oyuncu == bilgisayar ){
+    console.log("Beraberlik")
+  }else{
+    console.log("Kaybettin!")
+  }
 }
 
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
@@ -113,8 +122,8 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function milDonusturucu(km) {
+  return km *0.62;
 }
 
 //Görev 4b - Santimetreden Feet
